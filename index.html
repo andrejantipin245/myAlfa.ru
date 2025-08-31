@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Как заработать с программой «Мой Альфа» — бесплатный мини‑курс</title>
+  <meta name="description" content="Пошаговый план: как зарабатывать на программе «Мой Альфа». Бесплатный мини‑курс, шаблоны, скрипты, воронка в Telegram. Подключайтесь и начинайте сегодня." />
+  <meta name="theme-color" content="#0b132b" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Как заработать с программой «Мой Альфа» — бесплатный мини‑курс" />
+  <meta property="og:description" content="Пошаговый план + материалы: подключайтесь к воронке и начинайте зарабатывать уже сегодня." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0b132b/ffffff&text=Мой+Альфа:+Старт+дохода" />
+  <style>
+    :root {
+      --bg: #0b132b; --ink: #0e1a2b; --ink-2: #1c2541; --ink-3: #3a506b; --acc: #5bc0be; --acc-2: #6fffe9; --white: #ffffff; --muted: #8aa2c3;
+      --radius: 18px; --shadow: 0 10px 30px rgba(11,19,43,.25);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; color: #0e1a2b; background: #f6f8fb; }
+    a { color: var(--acc); text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { width: min(1120px, 92%); margin-inline: auto; }
+    header {
+      position: sticky; top: 0; z-index: 50; background: #ffffffcc; backdrop-filter: saturate(1.3) blur(12px); border-bottom: 1px solid #e8eef7;
+    }
+    .nav { display: flex; gap: 24px; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .2px; }
+    .logo-badge {
+      width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
+      color: var(--ink); background: linear-gradient(135deg, var(--acc), var(--acc-2)); box-shadow: var(--shadow);
+    }
+    .nav a.btn {
+      padding: 10px 16px; border-radius: 12px; background: var(--ink-3); color: #fff; font-weight: 600;
+    }
+    .nav a.btn-outline {
+      background: transparent; color: var(--ink-3); border: 2px solid var(--ink-3);
+    }
+    .hero {
+      position: relative; isolation: isolate; overflow: hidden;
+      background: radial-gradient(1200px 600px at 80% -10%, #dff8f7 0%, transparent 60%), #ffffff;
+    }
+    .hero .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; padding: 68px 0 32px; }
+    .badge {
+      display: inline-flex; gap: 8px; align-items: center;
+      padding: 6px 10px; border-radius: 999px; background: #eff6ff; color: #1e3a8a;
+      font-weight: 600; font-size: 12px;
+    }
+    h1 { font-size: 40px; line-height: 1.1; margin: 14px 0; }
+    .lead { font-size: 18px; color: #394e6a; }
+    .cta-wrap { display: flex; gap: 12px; flex-wrap: wrap; margin: 22px 0; }
+    .btn {
+      cursor: pointer; padding: 14px 18px; border: none; border-radius: 14px;
+      font-weight: 700; background: var(--acc); color: #06252b; box-shadow: var(--shadow);
+      text-align: center; display: inline-block; width: auto;
+    }
+    .btn.secondary {
+      background: var(--ink-3); color: #fff;
+    }
+    .hero-card {
+      background: #fff; border: 1px solid #e5effa; border-radius: var(--radius);
+      padding: 18px; box-shadow: var(--shadow);
+    }
+    .kpis {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px;
+    }
+    .kpi {
+      background: #0b132b; color: #fff; border-radius: 16px; padding: 14px;
+    }
+    .kpi b { font-size: 22px; }
+    section {
+      padding: 56px 0;
+    }
+    .section-title {
+      font-size: 30px; margin: 0 0 12px;
+    }
+    .muted {
+      color: #6b7f99;
+    }
+    .benefits {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 24px;
+    }
+    .card {
+      background: #fff; border: 1px solid #e8eef7; border-radius: var(--radius);
+      padding: 18px; box-shadow: 0 4px 16px rgba(0,0,0,.06);
+    }
+    .card h3 {
+      margin: 10px 0 6px;
+    }
+    .steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; counter-reset: step;
+    }
+    .step {
+      position: relative; padding: 18px; background: #fff; border: 1px solid #e8eef7; border-radius: var(--radius);
+    }
+    .step:before {
+      counter-increment: step; content: counter(step);
+      position: absolute; top: -14px; left: -14px;
+      width: 36px; height: 36px; border-radius: 50%;
+      display: grid; place-items: center;
+      font-weight: 800; background: var(--acc); box-shadow: var(--shadow);
+    }
+    .curr-grid {
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 20px;
+    }
+    .list {
+      display: grid; gap: 10px;
+    }
+    .list .li {
+      display: flex; gap: 10px; align-items: flex-start;
+      background: #fff; border: 1px solid #e8eef7; border-radius: 14px; padding: 12px;
+    }
+    .li .dot {
+      width: 12px; height: 12px; margin-top: 6px; border-radius: 50%;
+      background: var(--acc);
+    }
+    .testimonials {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+    }
+    .quote {
+      background: #fff; border: 1px solid #e8eef7; border-radius: 16px; padding: 18px;
+    }
+    .quote .name {
+      font-weight: 800;
+    }
+    .cta {
+      background: linear-gradient(180deg,#f0fbfb,#ffffff);
+    }
+    footer {
+      background: #0b132b; color: #cfe3ff;
+    }
+    .foot {
+      display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 22px; padding: 32px 0;
+    }
+    .copy {
+      border-top: 1px solid rgba(255,255,255,.12); padding: 14px 0; text-align: center; font-size: 13px;
+    }
+    @media (max-width: 1024px) {
+      .hero .grid {
+        grid-template-columns: 1fr; padding-top: 40px;
+      }
+      .benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .curr-grid {
+        grid-template-columns: 1fr;
+      }
+      .kpis {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 32px;
+      }
+      .benefits, .steps, .testimonials {
+        grid-template-columns: 1fr;
+      }
+      .form .row {
+        grid-template-columns: 1fr;
+      }
+      .foot {
+        grid-template-columns: 1fr;
+      }
+      .kpis {
+        grid-template-columns: 1fr;
+      }
+    }
+    .float {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true">₽</div>
+        <div>Мой Альфа · Доход</div>
+      </div>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="#how">Как работает</a>
+        <a href="#program">Программа</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#cta" class="btn">Получить курс</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container grid">
+      <div>
+        <span class="badge">Бесплатный мини‑курс · шаблоны · скрипты</span>
+        <h1>Как легко зарабатывать с программой «Мой Альфа»</h1>
+        <p class="lead">Получите бесплатный мини-курс с готовыми статьями, скриптами и воронкой в Telegram. Просто повторяйте пошаговые инструкции и начинайте получать доход без сложностей и бюджета на рекламу.</p>
+        <div class="cta-wrap">
+          <a href="#cta" class="btn">Забрать курс и материалы</a>
+          <a href="#how" class="btn secondary">Как это работает</a>
+        </div>
+        <ul class="muted" style="list-style:none; padding:0; display:grid; gap:6px; margin:16px 0 0">
+          <li>✓ Проверенные тексты и визуал под ключ</li>
+          <li>✓ Бесплатный органический трафик</li>
+          <li>✓ Рабочая воронка в Telegram для клиентов и агентов</li>
+        </ul>
+      </div>
+      <div class="hero-card float" aria-hidden="true">
+        <img src="https://dummyimage.com/720x420/eff6ff/1e3a8a&text=Воронка:+Статья+→+Сайт+→+Telegram" alt="Схема воронки" />
+        <div class="kpis">
+          <div class="kpi"><div>Средний чек</div><b>₽ 1 000+</b></div>
+          <div class="kpi"><div>Конверсия в регистрацию</div><b>10–20%</b></div>
+          <div class="kpi"><div>Материалы</div><b>включены</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <h2 class="section-title">Почему это работает</h2>
+      <p class="muted">Сосредоточились на простых шагах и готовых инструментах, чтобы вы быстрее получили результат.</p>
+      <div class="benefits">
+        <div class="card">
+          <h3>Готовые тексты и визуал</h3>
+          <p>Берите и используйте: статьи, посты, письма, баннеры — всё под ключ.</p>
+        </div>
+        <div class="card">
+          <h3>Трафик без бюджета</h3>
+          <p>Бесплатные площадки как Дзен, VC, Pikabu и Medium: получайте показы и клики органически.</p>
+        </div>
+        <div class="card">
+          <h3>Воронка в Telegram</h3>
+          <p>Скрипты для диалога, автосообщения, чек‑листы и шаблоны для быстрых ответов.</p>
+        </div>
+        <div class="card">
+          <h3>Масштабирование</h3>
+          <p>Привлекайте клиентов и агентов — стройте сеть и растите доход в геометрической прогрессии.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <h2 class="section-title">Как начать и зарабатывать с программой «Мой Альфа» — 4 простых шага</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Опубликуйте статьи</h3>
+          <p>Разместите готовые материалы на площадках: Дзен, VC, Pikabu, Medium. В конце добавьте ссылку на лендинг.</p>
+        </div>
+        <div class="step">
+          <h3>2. Привлекайте посетителей</h3>
+          <p>Посетители заходят на ваш сайт и видят простое предложение с кнопкой для перехода в Telegram.</p>
+        </div>
+        <div class="step">
+          <h3>3. Подключайтесь к Telegram-воронке</h3>
+          <p>Клиент или агент попадает в Telegram-бота или канал, получает мини-курс и инструкции.</p>
+        </div>
+        <div class="step">
+          <h3>4. Начинайте получать выплаты</h3>
+          <p>После регистрации и активности клиентов вы зарабатываете. Больше статей — выше доход и команда.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="program">
+    <div class="container curr-grid">
+      <div>
+        <h2 class="section-title">Что входит в бесплатный мини-курс</h2>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><b>Подключение к программе.</b> Пошаговая инструкция и частые ошибки.</div></div>
+          <div class="li"><div class="dot"></div><div><b>Шаблоны статей.</b> Готовые структуры, заголовки, призывы для Дзена, VC, Pikabu и Medium.</div></div>
+          <div class="li"><div class="dot"></div><div><b>Скрипты для клиентов и агентов.</b> Сообщения, ответы на возражения, чек‑листы.</div></div>
+          <div class="li"><div class="dot"></div><div><b>Воронка в Telegram.</b> Готовые тексты для постов, автосообщения, оформление канала.</div></div>
+          <div class="li"><div class="dot"></div><div><b>План на 14 дней.</b> Ежедневные действия для вывода на первые выплаты.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 6px">FAQ — быстрые ответы</h3>
+        <div class="faq">
+          <details><summary>Сколько можно заработать?</summary><div class="muted">Зависит от трафика и конверсии. При 10 000 просмотров статьи ожидается 20–100 регистраций.</div></details>
+          <details><summary>Нужна ли реклама с бюджетом?</summary><div class="muted">Нет, стартуем на бесплатных площадках. Рекламу можно подключить для масштабирования позже.</div></details>
+          <details><summary>Что нужно для старта?</summary><div class="muted">Телеграм-аккаунт/бот, этот сайт и ваши первые 1-2 статьи. Остальное внутри мини-курса.</div></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Отзывы учеников</h2>
+      <p class="muted">Первые результаты участников после запуска статей и воронки.</p>
+      <div class="testimonials">
+        <div class="quote"><p>«Сделал одну большую статью на VC и короткую на Дзен, собрал 12 заявок за неделю. Первые выплаты уже пришли.»</p><div class="name">Анастасия · Самара</div></div>
+        <div class="quote"><p>«Взял шаблоны, поменял под себя и запустил Telegram-воронку. Сейчас 2–3 новых регистрации в день.»</p><div class="name">Иван · Екатеринбург</div></div>
+        <div class="quote"><p>«Главное — делать регулярно. Статьи на Pikabu начали набирать показов спустя 3–4 дня.»</p><div class="name">Дмитрий · Казань</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="curr-grid" style="align-items:start">
+        <div>
+          <h2 class="section-title">Бесплатный мини‑курс с готовыми материалами</h2>
+          <p class="muted">Получите пошаговый план и шаблоны: статьи, скрипты, чек-листы и Telegram-воронку. Всё готово — просто повторяйте и начинайте зарабатывать уже сегодня.</p>
+          <ul class="muted" style="list-style:none; padding:0; display:grid; gap:6px; margin:14px 0">
+            <li>✓ Проверенные тексты и визуальные материалы</li>
+            <li>✓ Органический трафик без бюджета</li>
+            <li>✓ Рабочая воронка для клиентов и агентов</li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://t.me/+E1Xf-vDTLU9lNzcy" target="_blank" rel="noopener noreferrer" class="btn" style="width:100%; text-align:center;">
+            Получить курс и начать сегодня
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="logo" style="color:#fff">
+          <div class="logo-badge" aria-hidden="true">₽</div>
+          <div>Мой Альфа · Доход</div>
+        </div>
+        <p class="muted" style="color:#cfe3ff">Образовательный проект. Материалы предоставляются в информационных целях и не являются финансовой рекомендацией.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul style="list-style:none; padding:0; margin:8px 0; display:grid; gap:6px">
+          <li><a href="#how">Как работает</a></li>
+          <li><a href="#program">Программа</a></li>
+          <li><a href="#testimonials">Отзывы</a></li>
+          <li><a href="#cta">Получить курс</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul style="list-style:none; padding:0; margin:8px 0; display:grid; gap:6px">
+          <li><a id="tgLink" href="#">Telegram</a></li>
+          <li><a id="mailLink" href="#">Email</a></li>
+          <li><a href="#" id="privacyOpen2">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> Мой Альфа · Доход</div>
+  </footer>
+
+  <dialog id="privacy" style="max-width:min(720px,92%); border:none; border-radius:16px; padding:0; box-shadow:var(--shadow)">
+    <div style="padding:18px">
+      <h3 style="margin:0 0 8px">Политика конфиденциальности</h3>
+      <p class="muted">Мы храним только те данные, которые вы отправляете через форму (имя и контакт для связи). Данные используются для выдачи доступа к мини‑курсу и обратной связи. Запрос на удаление — через Telegram или email.</p>
+      <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:14px">
+        <button class="btn secondary" id="privacyClose">Закрыть</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Как заработать с программой Мой Альфа",
+    "description": "Мини‑курс с шаблонами статей, скриптами и телеграм‑воронкой.",
+    "provider": { "@type": "Organization", "name": "Мой Альфа · Доход" }
+  }
+  </script>
+
+  <script>
+    const SETTINGS = {
+      telegram: "https://t.me/+E1Xf-vDTLU9lNzcy", // замените на ваш Telegram канал
+      email: "mailto:you@example.com",            // ваш email
+      registrationLink: "https://example.com/reg" // ссылка для перехода (если нужно)
+    };
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const qs = location.search;
+    const withUTM = (url) => qs ? (url + (url.includes('?') ? '&' : '?') + qs.slice(1)) : url;
+    const tgLink = document.getElementById('tgLink');
+    const mailLink = document.getElementById('mailLink');
+    tgLink.href = withUTM(SETTINGS.telegram);
+    mailLink.href = SETTINGS.email;
+    const privacy = document.getElementById('privacy');
+    const privacyOpen = document.getElementById('privacyOpen');
+    const privacyOpen2 = document.getElementById('privacyOpen2');
+    const privacyClose = document.getElementById('privacyClose');
+    [privacyOpen, privacyOpen2].forEach(el => el && el.addEventListener('click', (e) => { e.preventDefault(); privacy.showModal(); }));
+    privacyClose?.addEventListener('click', () => privacy.close());
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        const id = this.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+</html>
